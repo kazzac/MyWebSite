@@ -92,6 +92,11 @@ footer{
     padding: 0;
 }
 
+#top_menu > #selected_menu{
+
+    background-color: #800000;
+}
+
 #top_menu > li {
   background-color: #bf7a3d;
   display: block;
