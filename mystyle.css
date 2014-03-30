@@ -1,0 +1,171 @@
+/*
+コメント
+*/
+
+body,html{
+    height:100%;
+    margin:0px;
+    background-color:#178282;
+}
+
+
+
+h1 {
+    color: black;
+
+}
+
+h2{
+    clear:both;
+    color: white;
+    font-style:italic;
+    text-decoration:underline;
+}
+
+h3{
+    color: green;
+
+}
+
+
+
+a{
+    /*text-decoration:none;*/
+    color:white;
+}
+
+header{
+    width:100%;
+    margin:0 auto;
+    /*height:20%;*/
+    font-size: 5;
+    font-weight: 700;
+    color:#000000;
+    text-align: center;
+    background-color:#d7d7c2;
+    padding:10px;
+}
+
+#left-box{
+    width:20%;
+    /*height:100%;*/
+    margin:0;
+    padding:10px;
+    background-color:#515c7a;
+    float:left;
+
+}
+
+#right-box{
+    width:75%;
+    float:right;
+}
+
+footer{
+    height:30px;
+    font-size: 50%;
+    color: #2f4f4f;
+    text-align:right;
+    clear:both;
+    background-color:#d7d7c2;
+}
+
+#top_menu{
+    width:100%;
+    margin:0 auto;
+    padding:0px;
+    text-align: center;
+    background-color:#bf7a3d;
+}
+
+/*
+#top_menu li{
+    display:inline;
+    font-size:17px;
+    margin-left:10px;
+}*/
+
+#top_menu {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+#top_menu > li {
+  background-color: #bf7a3d;
+  display: block;
+  float: left;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  width: 12%;
+}
+
+#top_menu > li:hover {
+  background-color: #C33;
+}
+
+#top_menu > li > a {
+  color: #ffffff;
+  display: block;
+  text-decoration: none;
+}
+
+#top_menu > li > a:hover {
+  text-decoration:underline ;
+}
+
+#submenu{
+    width:80%;
+    /*height:100%;*/
+    margin:0;
+    padding:10px;
+    color:#ffffff;
+    text-align:center;
+    background-color:#178282;
+}
+.up_date{
+    font-size:50%;
+    font-style:italic;
+    
+
+}
+
+.loud{
+    font-size:150%;
+    font-weight:400;
+    color:#d7d7c2;
+}
+
+.case_box{
+    width:95%;
+    height:auto;
+    background-color:#d7d7c2;
+    padding:10px;
+}
+
+.screen img{
+    max-width:300px;
+    height:auto;
+    float:left;
+    margin:10px;
+}
+
+.text_box{
+    padding:20px;
+    width:70%;
+    
+
+}
+
+.fixed-box{
+    float:right;
+    margin:10px;
+    width:80px;
+    height:23px;
+    font-size:15px;
+    text-align:center;
+    padding:10px;
+    background-color:#515c7a;
+}

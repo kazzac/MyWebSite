@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+	<head>
+		<meta charset="utf-8">
+		<title>ど素人が挑む！Webページ制作日記</title></title>
+        <meta name="description" content="HTML、CSS、JavaScript、Ruby、MySQLなど、41歳のまったくの素人がWebプログラミングを覚えていこうとする無謀な日記です。">
+        <link rel="stylesheet" href="mystyle.css">
+        <link rel="shortcut icon" href="img/favicon.ico">
+        
+    </head>
+
+	<body>
+        <!--
+        <div id="top-image"><img src="img/fudosan_top.jpg" width="750px" height="200px" alt="トップ画像" title="トップ画像"></div>
+        -->
+      
+        <header>
+            <h1 id="top">ど素人が挑む！Webページ制作日記</h1>
+            <p>HTML、CSS、JavaScript、Ruby、MySQLなど、<br>41歳の「ど素人」がWebプログラミングを覚えていこうとする無謀な日記です。</p>
+        </header>
+        
+        <ul id="top_menu">
+                <li><a href="html.html">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">Ruby</a></li>
+                <li><a href="#">Mac ターミナル</a></li>
+                <li><a href="#">MySQL</a></li>
+                <li><a href="#">JavaScript</a></li>
+        </ul>
+        
+        <div id="left-box">
+            <p id="submenu">Home - Menu</p>
+            <hr>
+            <p><a href="#about">このサイトについて</a></p>
+            <p><a href="#ichiman">10,000時間の法則</a></p>
+            <p><a href="#link">僕の救世主〜参考にしたHPのリンク集</a></p>
+            <p><a href="index.html"><img src="img/favicon.ico" > ホームへ</a></p>
+        </div>
+        
+        <div id="right-box">
+            <h2 id="about">このサイトについて</h2>
+            <p class="up_date">upload:2014.02.08</p>
+            <p>PCをいじり続けて20数年。
+                <br>Word、Excel、Access、Photoshop、Illustrator、Indesign、etc...　
+                <br>色々なソフトウェアに触れてきました。
+                <br><br>そんなPCライフの中で、毎日のようにネットを利用しているのに、
+                <br>自分でWeb環境を開発することだけは何故か避けてきていました。。。
+                <br><br>でも、<span class="loud">Webページを自分で作れるようになりたい！</span>
+                <br><br>そんな思いはいつも心のどこかにありました。
+                <br>現在、41歳の僕ですが、「これからの人生で一番若いのは今の自分だ！」
+                <br>という慰めにも似た言葉に一縷の望みを託し、
+                <br>Web開発という大海原に出航する決意をしました。
+                <br>
+                <br>まずは<a href="http://www.studytech.jp/" target="_blank">StudyTech</a>さんの「WebサービスをRubyで作る」というレッスンをひたすら進め、
+                <br>なんとかHTML、CSSそしてMySQLの基本を学んだところです。
+                <br>
+                <br>勉強を進めていく中で、
+                <br>
+                <br>「書いてある通りにやってもできないよ！」
+                <br>「これは大切だ！メモ！」
+                <br>「このサイトに助けられた〜」
+                <br>「僕の経験ってみんなの役に立つのかな？」
+                <br>
+                <br>などど考えることが多くあり、
+                <br>せっかく勉強しているんだからWebページを作りながら進めることにしました。
+                <br>僕の経験が、誰かのためになることを期待しています。
+                <br><br>ちなみに、このページは勉強を始めて20時間の時点で作り始めています。
+                <br>お見苦しいところがあると思いますが、ご容赦ください。
+            
+            </p>
+            
+            <hr>
+            
+            <h2 id="ichiman">10,000時間の法則</h2>
+            <p class="up_date">upload:2014.02.09</p>
+            <p>ご存知の方も多いと思いますが、
+                <br>The New Yorkerの記者、マルコム・グラッドウェル（Malcolm Gladwell）氏によると、
+                <br>スポーツでも勉強でも、エキスパートになるには、
+                <br>
+                <br><span class="loud">一万時間</span>
+                <br>
+                <br>そのことに対して打ち込む必要があるとのこと。
+                <br>一万時間というと、毎日3時間取り組んで9年強かかる膨大な時間です。
+                <br>
+                <br>僕はその10,000時間を目指して日々トレーニングをしています。
+                <br>
+                <br>10,000時間達成に何年かかるのか？
+                <br>JavaScriptで計算できるようにしてみました。
+                <br>あなたの目標達成に役立ててもらえたら、幸いです。
+                
+                <div class="case_box">
+
+                <script type="text/javascript">
+                    function calcYears(){
+                        myDays = 10000 / document.calcYearsForm.myHours.value
+                        myYears = myDays / 365;
+                        myDays = Math.round(myDays * 100) / 100
+                        myYears = Math.round(myYears * 100) / 100
+                        
+                        message = "毎日" + document.calcYearsForm.myHours.value + "時間取り組むと、" + document.calcYearsForm.myPurpose.value + "をマスターするのに" + myDays + "時間、" + myYears + "年かかります。";
+                        document.calcYearsForm.myResult.value = message;
+                        }
+                </script>
+                    
+                <form name="calcYearsForm">
+                    何を目標にするのかを入力してください。
+                    <input type="text" size="20" name="myPurpose" value="Webプログラミング"><br>
+                    一日に何時間取り組みますか？
+                    <input type="text" size="3" name="myHours" value="3"><br>
+                    <input type="button" value="計算する！" onclick="calcYears()">
+                    <input type="text" size="100" name="myResult">
+                </form>
+                </div>
+                
+                <br>
+
+                <div class="case_box">
+                <script type="text/javascript">
+                    function calcAverage(){
+                        now = new Date();
+                        myDays = document.calcAverageForm.myStart.value - now;
+                        myAvr = document.calcAverageForm.myHours.value/myDays;
+                        goalDays = 10000/myAvr;
+                        goalYears = goalDays/365;
+                        goalDays = Math.round(goalDays * 100) / 100
+                        goalYears = Math.round(goalYears * 100) / 100
+                        
+                        message = "この調子で取り組むと、" + goalDays + "日間、" + goalYears + "年かかります。";
+                        document.calcAverageForm.myResult.value = message;
+                        }
+                </script>
+                    
+                <form name="calcAverageForm">
+                    いつから取り組んでいるのかを入力してください。
+                    <input type="date" size="20" name="myStart"><br>
+                    今日現在、何時間取り組んできていますか？
+                    <input type="text" size="5" name="myHours"><br>
+                    <input type="button" value="計算する！" onclick="calcAverage()">
+                    <input type="text" size="100" name="myResult">
+                </form>
+            
+                </div>
+            </p>
+            
+            <hr>    
+            
+            <h2 id="link">僕の救世主〜参考にしたHPのリンク集</h2>
+            <p class="up_date">upload:2014.02.08</p>
+            <p>この日記の中で参照していたり、
+                <br>困ったときに助けてくれたページへのリンクです。
+                <br>ぜひのぞいてみてくださいね。</p>
+            
+            
+            <p><a href="http://www.studytech.jp/" target="_blank"><img src="img/studytech-favicon.ico" > StudyTech</a></p>
+            
+            <p><a href="http://dotinstall.com/" target="_blank"><img src="img/dotinstall-favicon.ico" > ドットインストール</a></p>
+            
+            <p><a href="http://www.css-lecture.com/" target="_blank"><img src="img/csslecture-favicon.ico" > CSS Lecture</a></p>
+            
+            <p class="fixed-box"><a href="#top">TOPへ</a></p>
+        
+        
+        </div>
+        
+        <footer>
+            copyright 2014 Omotezako Real Estate Agent Co.
+        </footer>
+        
+    </body>
+
+</html>
