@@ -87,6 +87,7 @@
                 <br>僕はその10,000時間を目指して日々トレーニングをしています。
                 <br>
                 <br>10,000時間達成に何年かかるのか？
+                <br>そして、今のペースだと何年かかるのか？
                 <br>JavaScriptで計算できるようにしてみました。
                 <br>あなたの目標達成に役立ててもらえたら、幸いです。
                 
@@ -119,12 +120,13 @@
                 <div class="case_box">
                 <script type="text/javascript">
                     function calcAverage(){
-                        now = new Date();
-                        myDays = document.calcAverageForm.myStart.value - now;
+                        myNow = new Date();
+                        myStartDate = Date.parse(document.calcAverageForm.myStart.value);
+                        myDays = (myNow - myStartDate)/86400000;
                         myAvr = document.calcAverageForm.myHours.value/myDays;
                         goalDays = 10000/myAvr;
                         goalYears = goalDays/365;
-                        goalDays = Math.round(goalDays * 100) / 100
+                        goalDays = Math.round(goalDays)
                         goalYears = Math.round(goalYears * 100) / 100
                         
                         message = "この調子で取り組むと、" + goalDays + "日間、" + goalYears + "年かかります。";
@@ -135,7 +137,7 @@
                 <form name="calcAverageForm">
                     いつから取り組んでいるのかを入力してください。
                     <input type="date" size="20" name="myStart"><br>
-                    今日現在、何時間取り組んできていますか？
+                    今日までに、合計で何時間取り組んできましたか？
                     <input type="text" size="5" name="myHours"><br>
                     <input type="button" value="計算する！" onclick="calcAverage()">
                     <input type="text" size="100" name="myResult">
@@ -158,6 +160,10 @@
             <p><a href="http://dotinstall.com/" target="_blank"><img src="img/dotinstall-favicon.ico" > ドットインストール</a></p>
             
             <p><a href="http://www.css-lecture.com/" target="_blank"><img src="img/csslecture-favicon.ico" > CSS Lecture</a></p>
+        
+            <p><a href="https://github.com/" target="_blank"><img src="img/git-favicon.ico" > GitHub</a></p>
+        
+            
             
             <p class="fixed-box"><a href="#top">TOPへ</a></p>
         

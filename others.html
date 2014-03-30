@@ -34,87 +34,67 @@
         
         <div id="left-box">
             <p id="submenu">その他</p>
-            <p><a href="#about">Git</a></p>
-            <p><a href="#yougo">用語の解説</a></p>
+            <p><a href="#Git">Gitについて</a></p>
             
             <p><a href="index.html"><img src="img/favicon.ico" > ホームへ</a></p>
         </div>
         
         <div id="right-box">
-            <h2 id="about">HTMLについて（簡単なページを作ってみる）</h2>
-            <p class="up_date">upload:2014.02.09</p>
-            <p>HTMLは、Hyper Text Markup Language の略で、
-                <br>Webページ（ホームページ）を書くための基本中の基本。
+            <h2 id="Git">Gitについて</h2>
+            <p class="up_date">upload:2014.03.30</p>
+            <p>Gitってご存知ですか?
+                <br>「ジット」ではなく<span class="loud">「ギット」</span>と読みます。
                 <br>
-                <br>ハイパーテキストマークアップランゲージ???
+                <br><a href="https://github.com/" target="_blank"><img src="img/git-favicon.ico" > GitHub</a> ←GitHub（ギットハブ）の公式HPはこちらです
                 <br>
-                <br>何だか難しそうですが、実はそうでもありません。
-                <br>これがないと何も始まらないのですが、　
-                <br>逆に言うと、シンプルな WebページならHTMLだけで作れます。
+                <br>Gitは一言でいうと、
+                <br>作成しているプログラムなどのバージョンを管理する仕組みです。　
                 <br>
-                <br>「ホームページビルダとかのソフトがいるんでしょ？」
-                <br>などど、僕も最初は思っていました。
+                <br>難しい言葉では、VCS:Version Control System 日本語では、
+                <br><span class="loud">バージョン管理システム</span>（難しくなかったですね....）
+                <br>と呼ばれるものです。
                 <br>
-                <br>いざ始めるまでは敷居が高く見えるのですが
-                <br>実は。。。
-                <br><br><span class="loud">テキストエディタ（Windowsならメモ帳）だけで作れます！！！</span>
-                <br><br>物は試しです、色々と考えるよりやってみた方が分かりますよね。
-                <br>下にとても短いHTMLを用意しましたので、気軽な気持ちで作ってみましょう！
+                <br>プログラムなどのバージョン管理と言いましたが、
+                <br>別にプログラムじゃなくても構いません。
+                <br>
+                <br>たとえばPCで絵を描く人なら、その製作過程を記録しておくことができます。
+                <br>PCで絵を描く過程が、
+                <br>
+                <br>下絵　→　下絵の修正　→　着色1　→　着色2　→　微調整　→　完成
+                <br>
+                <br>だとしましょう。
+                <br>
+                <br>この「下絵」や「着色2」など、それぞれの過程におけるデータを
+                <br>Gitでは保存しておくことができます。
+                <br>（実際には全部保存している訳ではないのですが、そのように扱うことができます）
+                <br>
+                <br>しかもデータを保存したフォルダをGitに登録しておけば
+                <br><span class="loud">半自動的に変更履歴を保存</span>してくれます。
+                <br>（なぜ「半」自動的なのかは次回の投稿で記載しますね）
+                <br>
+                <br>ですから、手元のデータがたとえ「微調整」の段階に入っていても、
+                <br>「下絵」や「着色1」など
+                <br><span class="loud">データを以前の状態まで戻すことができる</span>のです。
+                <br>
+                <br>しかも、いつ、誰が、何を、どのように変更したのかが確認できるのです。
+                <br>
+                <br>ここで「誰が」という言葉が出てきて気づいた方もいらっしゃるでしょう。
+                <br>そう、Gitでは
+                <br><span class="loud">複数の人でひとつの作品を作ることも可能</span>なのです。
+                <br>
+                <br>ということは、もちろん
+                <br>
+                <br><span class="loud">ファイルの共有も可能</span>です。
+                <br>
+                <br>かなり使い勝手の良いシステムなので世界中で多くの人々が使っています。
+                <br>実際、僕もこのHPのデータ管理をGitで行っています。
+                <br>
+                <br>素晴らしいでしょ、Git。
+                <br>
+                <br>あなたも使ってみませんか?
+                <br>
+                <br>近日中にGitの導入法とその簡単な使い方について記事を投稿しますのでお楽しみに♪
             </p>
-            
-            <pre class="case_box">
-                &lt;!DOCTYPE html&gt;
-                &lt;html lang=&quot;ja&quot;&gt;
-                    &lt;head&gt;
-                        &lt;meta charset=&quot;utf-8&quot;&gt;
-                        &lt;title&gt;最初の一歩！！！&lt;/title&gt;&lt;/title&gt;
-                        &lt;meta name=&quot;description&quot; content=&quot;とにかく作ってみる♪&quot;&gt;    
-                    &lt;/head&gt;
-                    &lt;body&gt;
-                        &lt;h1&gt;おめでとう&lt;/h1&gt;
-                        &lt;p&gt;初めてのWebページができましたね♪&lt;/p&gt;
-                    &lt;/body&gt;
-                &lt;/html&gt;
-            </pre>
-            
-            <ol>
-                <li>テキストエディタ（メモ帳など）を起動</li>
-                <li>上の文字列をコピーして、テキストエディタ（メモ帳など）にペースト</li>
-                <li>ペーストしたファイルに index.html と名前を付け、保存<br>（名前は半角英数字ならば自由に付けても構いませんが、拡張子は.htmlにしましょう）</li>
-                <li>保存したファイル、index.html をダブルクリックして開く<br>（もしくは、index.htmlをブラウザにドロップ）</li>
-            </ol>
-            
-            <div class="screen"><img src="img/screen01.png" alt="screen01" title="screen01"></div>
-            
-            <div class="text_box">
-            <p>どうでしょうか?<br>
-                <br>うまく作成されていれば、左の画像のようにシンプルなWebページが表示されているはずです。
-                <br>このシンプルなWebページに色々な仕掛けを追記していくことで、みなさんが普段よく見ている色鮮やかで、使いやすいWebページになっていきますよ。
-                <br><br>この調子で、勉強を進めていきましょう！
-            </p>
-            </div>
-            
-            <hr>
-            
-            <h2 id="yougo">用語の解説</h2>
-            <p>ご存知の方も多いと思いますが、
-                <br>The New Yorkerの記者、マルコム・グラッドウェル（Malcolm Gladwell）氏によると、
-                <br>スポーツでも勉強でも、エキスパートになるには、
-                <br>
-                <br><span class="loud">一万時間</span>
-                <br>
-                <br>そのことに対して打ち込む必要があるとのこと。
-                <br>一万時間というと、毎日3時間取り組んで9年強かかる膨大な時間です。
-                <br>
-                <br>僕はその10,000時間を目指して日々トレーニングをしています。
-                <br>
-                <br>10,000時間達成に何年かかるのか？
-                <br>JavaScriptで計算できるようにしてみました。
-                <br>あなたの目標達成に役立ててもらえたら、幸いです。
-                
-                
-            </p>
-
             
             
             <p class="fixed-box"><a href="#top">TOPへ</a></p>
