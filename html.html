@@ -35,7 +35,7 @@
         <div id="left-box">
             <p id="submenu">HTML</p>
             <p><a href="#about">HTMLについて</a></p>
-            <p><a href="#yougo">用語の解説</a></p>
+            <p><a href="#tag">タグ (pタグを例に)</a></p>
             
             <p><a href="index.html"><img src="img/favicon.ico" > ホームへ</a></p>
         </div>
@@ -96,21 +96,47 @@
             
             <hr>
             
-            <h2 id="yougo">用語の解説</h2>
-            <p>ご存知の方も多いと思いますが、
-                <br>The New Yorkerの記者、マルコム・グラッドウェル（Malcolm Gladwell）氏によると、
-                <br>スポーツでも勉強でも、エキスパートになるには、
+            <h2 id="tag">タグ (pタグを例に)</h2>
+            <p class="up_date">upload:2014.04.10</p>
+            <p><a href="#about">HTMLについて</a>のところで例を使って簡単なWebページを作りましたが、
                 <br>
-                <br><span class="loud">一万時間</span>
+                <br><span class="loud">&lt;p&gt; ~ &lt;/p&gt; , &lt;html&gt; ~ &lt;/html&gt;
+                    </span>
                 <br>
-                <br>そのことに対して打ち込む必要があるとのこと。
-                <br>一万時間というと、毎日3時間取り組んで9年強かかる膨大な時間です。
+                <br>のように、" &lt; " や " &gt; " で囲まれた記号がたくさん出てきました。
+                <br>この" &lt; " や " &gt; " で囲まれた記号を
                 <br>
-                <br>僕はその10,000時間を目指して日々トレーニングをしています。
+                <br><span class="loud">タグ</span>といいます。
                 <br>
-                <br>10,000時間達成に何年かかるのか？
-                <br>JavaScriptで計算できるようにしてみました。
-                <br>あなたの目標達成に役立ててもらえたら、幸いです。
+                <br>タグは、&lt;タグ名&gt;（例えば　&lt;p&gt;　）で開始し、
+                <br>&lt;/タグ名&gt;（例えば　&lt;/p&gt;　）で終わるのが原則です。
+                <br>ここで「原則」と書きましたが、例外もあるんです。
+                <br>が、今回は原則だけおさえて先に進みましょう！例外については、またUPします。
+                <br>
+                <br>そして、このタグの間に対象となる文字列などをはさんでやります。
+                <br>
+                <br>ちなみに、ここで例に挙げた&lt;p&gt;（「pタグ」と呼びます）は段落を作るタグです。
+                <br>pタグで挟まれた文章を1段落として扱い、そのあとに改行が入ります。
+                <br>ですから、HTML内に
+                <br>
+                <pre class="case_box">
+                    &lt;p&gt;みなさん&lt;/p&gt;
+                    &lt;p&gt;こんにちは&lt;/p&gt;
+                </pre>
+                <br>と書けば、ブラウザには
+                <pre class="case_box">
+                    みなさん
+                    こんにちは
+                </pre>
+                <br>と表示されます。なんとなく雰囲気は分かりますよね？
+                <br>難しいことは考えず、今のところは
+                <br>
+                <br><span class="loud">HTMLはタグで挟んで作るんだ！</span>
+                <br>
+                <br>ということだけ理解してもらえたらOKです♪
+                <br>pタグの他にもたくさんのタグがありますよ。
+                <br>このサイトで紹介していきますので、少しずつ勉強していきましょう！
+                <br>
                 
                 
             </p>

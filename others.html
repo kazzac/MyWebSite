@@ -34,13 +34,14 @@
         
         <div id="left-box">
             <p id="submenu">その他</p>
-            <p><a href="#Git">Gitについて</a></p>
+            <p><a href="#aboutGit">Gitについて</a></p>
+            <p><a href="#bootstrap-memo">Bootstrapメモ</a></p>
             
             <p><a href="index.html"><img src="img/favicon.ico" > ホームへ</a></p>
         </div>
         
         <div id="right-box">
-            <h2 id="Git">Gitについて</h2>
+            <h2 id="aboutGit">Gitについて</h2>
             <p class="up_date">upload:2014.03.30</p>
             <p>Gitってご存知ですか?
                 <br>「ジット」ではなく<span class="loud">「ギット」</span>と読みます。
@@ -96,13 +97,100 @@
                 <br>近日中にGitの導入法とその簡単な使い方について記事を投稿しますのでお楽しみに♪
             </p>
             
+        <hr>
+        
+            <h2 id="bootstrap-memo">Bootstrapメモ</h2>
+            <p class="up_date">upload:2014.10.21</p>
+            <p>Bootstrap（ブートストラップ）は今風のWebサイトを簡単に作るための
+                <br><span class="loud">CSSフレームワーク</span>です。
+                <br>
+                <br><a href="http://getbootstrap.com/" target="_blank"><img src="img/bootstrap-favicon.ico" > Bootstrap</a> ←Bootstrap（ブートストラップ）の公式HPはこちらです
+                <br>
+                <br>CSSフレームワークというのは、
+                <br>ひとつひとつ手作業でCSSを記述する手間を省くために用意されている　
+                <br>
+                <br><span class="loud">「魔法の呪文集」</span>みたいなものです。
+                <br>
+                <br>このBootstrapの導入方法や記述の仕方について、
+                <br>ここにメモを残していきたいと思います。
+                
+                <h3>導入の方法</h3>
+                
+                まずは<a href="http://getbootstrap.com/" target="_blank"> Bootstrapの公式ページ</a>から必要なファイルをダウンロードします。  
+                <br>
+                <div class="screen"><img src="img/screenshot_bootstrap01.jpg" alt="screenshot_bootstrap01" title="screenshot_bootstrap01"></div>
+                <br>"Download Bootstrap"のボタンをクリックします。
+                <div class="screen"><img src="img/screenshot_bootstrap02.jpg" alt="screenshot_bootstrap02" title="screenshot_bootstrap02"></div>
+                <br>Downloadページに移動します。
+                <br>一番左の"Download Bootstrap"のボタンをクリックすると、
+                <br>ダウンロードが始まります。
+                <br>ダウンロードされたzipファイルを解凍してください。
+                <br>bootstrap-x.x.x（xは数字です）という名前のフォルダが出来ています。
+                <div class="screen"><img src="img/screenshot_bootstrap03.jpg" alt="screenshot_bootstrap03" title="screenshot_bootstrap03"></div>
+                <br>このbootstrap-x.x.x（xは数字です）フォルダ内に、
+                <br>htmlファイルを作成します。
+                <br>例えば、index.htmlという名前のファイルを作成し、
+                <br>このindex.html内に、
+                <br>Downloadページ内の"Basic Template"を全てコピーしてペーストします。
+                <br>
+                <br>実は。。。。
+                <br><span class="loud">これだけで準備完了！</span>なのです。
+                <br>どうでしょうか？簡単ですね。
+                <br>
+                <br>準備ができたので、次はその使い方について説明します。
+
+                <h3>グリッドレイアウトを使ってみる</h3>
+                それでは早速、BootstrapでWebページを作成してみましょう。
+                <br>さきほど作ったindex.htmlのbodyタグ内に以下のコードを記述します。 
+                <pre class="case_box">
+                &lt;div class=&quot;container&quot;&gt;
+                      &lt;div class=&quot;row&quot;&gt;
+                        &lt;div class=&quot;col-sm-2&quot; style=&quot;background:gray;&quot;&gt;2Columns&lt;/div&gt;
+                        &lt;div class=&quot;col-sm-6&quot; style=&quot;background:lime;&quot;&gt;6Columns&lt;/div&gt;
+                        &lt;div class=&quot;col-sm-4&quot; style=&quot;background:orange;&quot;&gt;4Columns&lt;/div&gt;
+                      &lt;div&gt;
+                 &lt;div&gt;
+                </pre>
+                <br>変更したindex.htmlをブラウザで開くと、
+                <br>
+                <br><img src="img/screenshot_bootstrap04.png" alt="screenshot_bootstrap04" title="screenshot_bootstrap04">
+                <br>
+                <br>こんな感じで分割されているのが分かると思います。
+                <br>上の画像では、わかりやすいように1列ずつのブロックも表示してありますが、
+                <br>さきほど記述したのは下段のグレー、緑、オレンジの部分だけです。
+                <br>
+                <br>このように、
+                <br>BootstrapではWebページを<span class="loud">12列に縦割り分割</span>したグリッドシステムが使えます。
+                <br>
+                <br>このグリッドシステムを使うには、
+                <br>まず対象範囲に<span class="loud">"row"というclass指定</span>を行います。
+                <br><span class="loud">&lt;div class=&quot;row&quot;&gt;...&lt;div&gt;の部分</span>がそれにあたります。
+                <br>
+                <br>そして、例えば2列,6列,4列に分割する場合には、それぞれ
+                <br>
+                <br><span class="loud">&lt;div class=&quot;col-sm-2&quot; &gt;...&lt;/div&gt;</span>
+                <br><span class="loud">&lt;div class=&quot;col-sm-6&quot; &gt;...&lt;/div&gt;</span>
+                <br><span class="loud">&lt;div class=&quot;col-sm-4&quot; &gt;...&lt;/div&gt;</span>
+                <br>
+                <br>と指定します。
+                <br>
+                <br>ここで大切なことは、全体を12列に分割しているので、
+                <br><span class="loud">col-sm-に続く数字の合計が12</span>
+                <br>になるようにしなければいけない、ということです。
+                <br>
+                <br>この数字の合計が12ではない場合も機能はしますが、
+                <br>レイアウトが崩れてしまうので注意が必要です。
+                <br>
+                
+            </p>
+            
             
             <p class="fixed-box"><a href="#top">TOPへ</a></p>
             <p class="fixed-box"><a href="index.html">ホームへ</a></p>
         
         
         </div>
-        
+
         <footer>
             copyright 2014 Omotezako Real Estate Agent Co.
         </footer>
